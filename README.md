@@ -1,6 +1,8 @@
 Heroku buildpack: Ruby
 ======================
 
+Note: This fork is an exact duplicate of Heroku's buildpack, with the exception of fetcher.rb.  I changed the curl timeout from 30s to 5m since my crappy, but very cheap, VPS provider is terrible.
+
 This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) for Ruby, Rack, and Rails apps. It uses [Bundler](http://gembundler.com) for dependency management.
 
 Usage
